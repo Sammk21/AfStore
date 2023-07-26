@@ -1,0 +1,38 @@
+{
+  "name": "api",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.11.0",
+    "@strapi/plugin-users-permissions": "4.11.0",
+    "@strapi/strapi": "4.11.0",
+    "api": "^6.0.0",
+    "axios": "^1.4.0",
+    "better-sqlite3": "8.0.1",
+    "cashfree-pg-sdk-nodejs": "^2.0.2",
+    "cashfree-sdk": "^0.1.1",
+    "crypto": "^1.0.1",
+    "meilisearch": "^0.33.0",
+    "razorpay": "^2.9.0",
+    "strapi-plugin-meilisearch": "^0.9.2",
+    "stripe": "^12.9.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "e1dafe23-752e-4b86-96e8-360683eab55b"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

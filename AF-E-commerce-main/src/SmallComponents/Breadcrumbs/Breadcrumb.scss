@@ -1,0 +1,45 @@
+@import "../../css-config/mixins.scss";
+.b-container{
+  margin:20px 0;
+
+}
+.breadcrumb {
+
+    background-color: #f5f5f5;
+    padding: 10px;
+  
+    .breadcrumb-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+  
+      .breadcrumb-item {
+        display: flex;
+  
+        .breadcrumb-link {
+          color: #333;
+          text-decoration: none;
+          
+          &:hover {
+            text-decoration: underline;
+          }
+          @include sm{
+            font-size: 12px;
+      
+          }
+        }
+  
+        &:not(:last-child)::after {
+          content: "/";
+          margin: 0 5px;
+          color: #333;
+          @include sm{
+
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  
+}
+
+html {
+  overscroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+  background-color: var(--background-color);
+  margin: 1px;
+  padding: 1px;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@-moz-document url-prefix() {
+  body {
+    scrollbar-width: none;
+  }
+}
+
+/**
+* scrollbar style
+ */
+
+body::-webkit-scrollbar {
+  width: 15px;
+  display: none;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--white);
+  border-left: 1px solid var(grey);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 100%);
+  border: 3px solid var(--white);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 70%);
+}
+
+:root {
+  --header-heightdesktop : 10rem;
+  --header-heightphone: 5rem;
+  --font-semi: 600;
+
+
+
+  /*===== fonts and sizes =====*/
+  --body-font: 'Raleway', sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --mid-font-size:1.2rem;
+  --normal-font-size: 0.938rem;
+  --smaller-font-size: 0.75rem;
+
+
+
+ }
+
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3.5rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: 0.875rem;
+  }
+}
+
+
+
+
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background: none;
+  font: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+ion-icon,
+button,
+a {
+  display: block;
+}

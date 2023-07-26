@@ -1,0 +1,91 @@
+@import "../../../css-config/mixins.scss";
+
+.newsletter-section{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    // background: #f9f9f9 url("../../../../public/img/categories/fam.jpg");
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // filter: blur(8px);
+    // -webkit-filter: blur(8px);
+   .newsletter-content{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+   }
+   .small-text{
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: grey;
+   }
+   .big-text{
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 30x;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding:  0 30px;
+
+    @include md{
+        font-size: 22px;
+    }
+   }
+   .form{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+    input{
+        width: 300px;
+        height: 40px;
+        border-radius: 0;
+        border: 1px solid rgba(0,0,0,0.2);
+        pad: 0 12px;
+        font-size: 16px;
+        outline:0 ;
+
+        @include md{
+            width: 200px;
+        }
+    }
+    button{
+        outline: 0;
+        border: 0;
+        height: 40px;
+        width: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        background-color: black;
+
+        @include md{
+                 width: 100px;
+        }
+    }
+   }
+   .text{
+   margin-bottom: 20px;
+   font-size: 14px;
+   color: rgba(0,0,0,0.6);;
+}
+.social-icons{
+    display: flex;
+    gap: 10px;
+    .icons{
+       
+        .link{
+           color: grey;
+        }
+        .link:hover{
+            color: black;
+        }
+    }
+}
+}

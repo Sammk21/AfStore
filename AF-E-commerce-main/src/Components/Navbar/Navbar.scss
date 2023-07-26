@@ -1,0 +1,151 @@
+@import "../../css-config/mixins.scss";
+
+.navbar{
+  height: var(--header-heightdesktop);
+  z-index: 10;
+  margin: 2px;
+  font-weight: 500;
+
+  @include md{
+    height: var(--header-heightphone);
+  }
+
+  .wrapper{
+    height: 70%;
+   
+
+    .topWrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 90%;
+      margin: 0 auto;
+      
+      .left{
+      display: flex;
+      gap: 25px;
+      width: 30%;
+      justify-content: start;
+      
+      
+    @include md{
+      display: none;
+    }
+      
+      }
+      .center{
+        font-size: 25px;
+        display: flex;
+        margin-top: 20px;
+        width: 30%;
+        justify-content: center;
+        align-items: start;
+
+        @include md{
+          align-items: center;
+          top : -3px;
+        }
+       
+        .item{
+          
+          .link{
+            font-size: var(--normal-font-size);
+            
+            .logo{
+             
+              height: 70px;
+              object-fit:fill;
+              background-blend-mode: screen;
+              opacity: 0.8;
+
+              @include md{
+                height: 55px;
+              }
+
+              @include sm{
+                height: 50px;
+              }
+              @include smm{
+                height: 40px;
+              }
+          
+            }
+          }
+        }
+        @include sm{
+          padding-left: 20px;
+        }
+        
+      }
+      .right{
+        display: flex;
+        width: 30%;
+        justify-content: end;
+        height: auto;
+
+        @include sm{
+           align-items: end;
+        }
+
+       
+       .icons{
+        gap: 5px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+      
+
+
+
+        .cartIcon{
+          top: -4px;
+        }
+        .link{
+          padding: 5px;
+        }
+       
+        .menu{
+          display: none;
+          @include md{
+            display: block;
+          }
+        }
+        svg{
+          font-size: 20px;
+        }
+        .cartIcon{
+          position: relative;
+          font-size: small;
+          display: flex;
+          align-items: center;
+        
+        }
+       }
+      }
+     
+    }
+   
+    
+  
+  }
+ 
+ 
+  &.sticky-header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    animation: stickyHeader 0.3s ease forwards;
+    box-shadow: 1px 3px 5px -1px rgba(0,0,0,0.39);
+    
+    
+  }
+ 
+ 
+}
+@keyframes stickyHeader {
+  0%{transform: translateY(-50px);}
+  100%{transform: translateY(0);}
+}
+

@@ -1,0 +1,33 @@
+@media screen and (max-width: 767px) {
+  .bottomWrapper {
+    top:3rem;
+    left: -100%;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color:#faf9f8 ;
+    transition: .5s;
+    margin: 2px;
+    
+  }
+   .left{
+    display: none;
+    
+
+  }
+}
+@media screen and (max-width: 767px) {
+  .left .items{
+    display: none;
+  }
+}
+#mobile{
+  color: black;
+}
+@media (min-width: 600px){
+.MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.css-qilzo4-MuiToolbar-root {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+}
+

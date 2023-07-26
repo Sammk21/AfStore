@@ -1,0 +1,17 @@
+@import "../../css-config/mixins.scss";
+.bottomWrapper{
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+
+    @include md{
+       display: none;
+    }
+    .lists{
+      display: flex;
+      gap: 25px;
+    }
+    
+   
+   
+  }

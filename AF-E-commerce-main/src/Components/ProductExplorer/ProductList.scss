@@ -1,0 +1,59 @@
+@import "../../css-config/mixins.scss";
+.product-container {
+  display: flex;
+  gap: 10px;
+  .sidebar {
+    width: 200px;
+
+
+    .sidebar-buttons{
+      margin-right: 10px;
+    }
+
+    @include md {
+      display: none;
+    }
+  }
+
+  .main-content {
+   width: 100%;
+    margin: 15px auto;
+    padding: 15px auto;
+    display: flex;
+    flex-direction: column;
+   
+   
+
+    .pagination-container{
+     margin-top: 20px;
+
+    
+     
+    }
+    .product-nav {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      padding-top: 10px;
+      .title{
+        margin: 0;
+        padding: 0;
+      }
+      .helper {
+        display: flex;
+        justify-content: space-between;
+        font-size: medium;
+        color: black;
+        cursor: pointer;
+        margin-bottom: 20px;
+        
+      }
+    }
+    .product-listing {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

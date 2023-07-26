@@ -1,0 +1,45 @@
+@import "../../css-config/mixins.scss";
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.sec-heading{
+    margin: 0 3rem;
+}
+.slick-slider {
+ 
+
+  max-width:98%;
+}
+.slick-slider{
+ 
+
+}
+
+.nextArrow{
+  right: -5px;
+}
+
+.slick-slide {
+  padding-right: 0;
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  img {
+    display: block;
+  }
+}
+
+.slick-list {
+  margin: 0 0px;
+}
+
+
+
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+}

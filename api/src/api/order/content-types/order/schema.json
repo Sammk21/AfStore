@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customerName": {
+      "type": "string"
+    },
+    "customerPhone": {
+      "type": "integer",
+      "required": true,
+      "unique": false,
+      "min": 10
+    },
+    "customerEmail": {
+      "type": "email"
+    },
+    "customerAddress": {
+      "type": "text"
+    },
+    "product": {
+      "type": "json"
+    },
+    "PaymentStatus": {
+      "type": "string"
+    },
+    "razorpayOrderId": {
+      "type": "string"
+    },
+    "razorpaySignature": {
+      "type": "string"
+    },
+    "subtotal": {
+      "type": "decimal"
+    },
+    "DeliveryStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Delivered",
+        "Pickedup",
+        "Packed"
+      ]
+    },
+    "pincode": {
+      "type": "integer"
+    },
+    "city": {
+      "type": "string"
+    },
+    "town": {
+      "type": "string"
+    },
+    "district": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "paymemtMode": {
+      "type": "string"
+    }
+  }
+}

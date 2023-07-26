@@ -1,0 +1,80 @@
+@import "../../../css-config/mixins.scss";
+input{
+    
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #2c2c2c;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+   
+
+.errormessage{
+    font-size: 10px;
+    color: red;
+    display: none;
+}
+input:invalid[focused=true] ~ .errormessage{
+    display: block;
+   
+}
+input:invalid[focused=true]{
+border : 1px solid red;
+
+}
+
+.address-section{
+    display: flex;
+    justify-content: space-between;
+    .input-box{
+      width: 50%;
+    
+    }
+    .input-box1{
+        width: 50%;
+        margin-right: 10px;
+    }
+}
+.sub-container{
+   display: flex;
+   justify-content: space-between;
+   
+   @include md{
+     flex-direction: column-reverse;
+   }
+   .address{
+    @include md{
+        width: 100%;
+    }
+   }
+}
+.payment-method-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Hide the default radio button */
+  .payment-method-container input[type="radio"] {
+    display: none;
+  }
+  
+  /* Style the custom radio button */
+  .payment-method-container label {
+    cursor: pointer;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+  }
+  
+  /* Style the custom radio button when it's selected */
+  .payment-method-container input[type="radio"]:checked + label {
+    background-color: #000000;
+    color: #fff;
+    border-color: #424242;
+  }
